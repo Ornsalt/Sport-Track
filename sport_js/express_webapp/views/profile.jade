@@ -1,0 +1,45 @@
+doctype html
+
+html(lang='en')
+    head
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/Yorha.css')
+        title=name
+
+    header
+        h1=name
+
+    body
+        h2 Update your account informations
+        div
+            form(action='/profile', method='post')
+                div
+                    input(type='text', id='email', name='email', placeholder='Your email', value=data.email, required)
+                    input(type='text', id='password', name='password', placeholder='Your password', value=data.passWord, required)
+                    br
+
+                div
+                    input(type='text', id='name', name='name', placeholder='Your name', value=data.name, required)
+                    input(type='text', id='lastName', name='lastName', placeholder='Your lastname', value=data.lastName, required)
+                    input(type='date', id='birthday', name='birthday', min='01/01/1900', max='31/12/2023', value=data.birthDay, required)
+                    br
+
+                div
+                    input(type='text', id='height', name='height', placeholder='Your height in meters', value=data.height, required)
+                    input(type='text', id='weight', name='weight', placeholder='Your weight in kilo-grammes', value=data.weight, required)
+                    select(name='sex', id='sex', required)
+                        option(seclevted='selected', value=data.sex)=data.sex
+                        option(value="♂") ♂
+                        option(value="♀") ♀
+                        option(value="?") ?
+                    br
+
+                div
+                    button(type='submit') Update
+                    form(action='/logout', method='post') 
+                        button(type='submit') Logout
+                    br
+                h2 Manage your account activity
+                br
+                button(id='upload', onclick="location.href='/upload'") Upload
+                button(id='act', onclick="location.href='/act'") Show

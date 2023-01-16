@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/Yorha.css">
+    <title></title>
+  </head>
+  <header>
+    <h1></h1>
+  </header>
+  <body>
+    <h2>Update your account informations</h2>
+    <div>
+      <form action="/register" method="post">
+        <div>
+          <input type="text" id="email" name="email" placeholder="Your email" required>
+          <input type="text" id="password" name="password" placeholder="Your password" required><br>
+        </div>
+        <div>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <input type="text" id="lastName" name="lastName" placeholder="Your lastname" required>
+          <input type="date" id="birthday" name="birthday" min="01/01/1900" max="31/12/2023" required><br>
+        </div>
+        <div>
+          <input type="text" id="height" name="height" placeholder="Your height in meters" required>
+          <input type="text" id="weight" name="weight" placeholder="Your weight in kilo-grammes" required>
+          <select name="sex" id="sex" required>
+            <option value="♂">♂</option>
+            <option value="♀">♀</option>
+            <option value="?">?</option>
+          </select><br>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

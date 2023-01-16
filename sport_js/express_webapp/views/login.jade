@@ -1,0 +1,22 @@
+doctype html
+
+html(lang='en')
+    head
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/Yorha.css')
+        title=name
+
+    header
+        h1=name
+
+    body
+        h2 Log in to your account
+        div
+            form(action='/login', method='post')
+                div
+                    input(type='text', id='email', name='email', placeholder='Your email', required)
+                div
+                    input(type='text', id='password', name='password', placeholder='Your password', required)
+                div
+                    br
+                    button(type='submit') submit

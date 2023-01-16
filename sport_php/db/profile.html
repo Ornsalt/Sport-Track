@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="static/img/favicon.ico">
+        <link rel="stylesheet" href="static/css/Style.css">
+        <title>Page Title</title>
+    </head>
+
+    <body>
+        <h1>SportTrack</h1>
+        <p>Welcome back.</p>
+
+        <form action="profile.html" method="POST">
+            <div>
+                <input type="text" id="name" name="name" placeholder="Your name" required disabled>
+                <input type="text" id="lastname" name="lastname" placeholder="Your lastname" required disabled>
+                <input type="date" id="birthday" name="birthday" min="1900-01-01" max="2022-12-31" required disabled>
+            </div>
+
+            <div>
+                <input type="text" id="height" name="height" placeholder="Your height" required>
+                <input type="text" id="weight" name="weight" placeholder="Your weight" required>
+                <select name="sex" id="sex" required>
+                    <option value="">--choose a gender--</option>
+                    <option value="♂">♂</option>
+                    <option value="♀">♀</option>
+                    <option value="?">?</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="text" id="email" name="email" placeholder="email" required>
+                <input type="text" id="password" name="password" placeholder="password" required>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+    </body>
+</html>

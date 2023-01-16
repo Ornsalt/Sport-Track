@@ -1,0 +1,19 @@
+doctype html
+
+html(lang='en')
+    head
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/Yorha.css')
+        title=name
+    
+    header
+        h1=name
+
+    body
+        h2 Main page
+        div
+            img(alt='funny cat running.gif', src='/images/run-busy.gif')
+        div
+            button(id='login', onclick="location.href='/login'") Login
+            button(id='about', onclick="location.href='/login'") About
+            button(id='register', onclick="location.href='/register'") Register

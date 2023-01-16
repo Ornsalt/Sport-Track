@@ -1,0 +1,30 @@
+doctype html
+
+html(lang='en')
+    head
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/Yorha.css')
+        title=name
+
+    header
+        h1=name
+
+    body
+        table(border='1')
+            thead
+                tr
+                    th Nom
+                    th Prénom
+                    th Date de naissance
+                    th Taille
+                    th Poids
+                    th Email
+            tbody
+                each val in data
+                 tr
+                    td= val.lastName
+                    td= val.name
+                    td= val.birthDay
+                    td= val.height
+                    td= val.weight
+                    td= val.email

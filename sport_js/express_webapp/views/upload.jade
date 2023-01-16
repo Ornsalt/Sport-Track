@@ -1,0 +1,19 @@
+doctype html
+
+html(lang='en')
+    head
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/Yorha.css')
+        title=name
+
+    header
+        h1=name
+
+    body
+        form(action='/upload', method='POST', enctype='multipart/form-data')
+            div
+                label(for='fileJson') insert .json file
+                br
+                input(type='file', name='fichierJson', accept='.json', required)
+                br
+            button(type='submit') Upload
